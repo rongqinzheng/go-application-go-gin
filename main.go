@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/rongqinzheng/go-application-go-gin/go-gin/pkg/setting"
-	"github.com/rongqinzheng/go-application-go-gin/go-gin/routers"
+	"github.com/rongqinzheng/go-application-go-gin/pkg/setting"
+	"github.com/rongqinzheng/go-application-go-gin/routers"
 	"net/http"
 )
 

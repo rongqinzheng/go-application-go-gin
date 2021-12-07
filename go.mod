@@ -8,7 +8,10 @@ require (
 	github.com/unknwon/com v1.0.1
 )
 
-require github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644 // indirect
+require (
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
+	github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644 // indirect
+)
 
 require (
 	github.com/gin-contrib/sse v0.1.0 // indirect
