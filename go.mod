@@ -32,13 +32,3 @@ require (
 	google.golang.org/protobuf v1.27.1 // indirect
 	gopkg.in/yaml.v2 v2.4.0 // indirect
 )
-
-replace (
-	github.com/rongqinzheng/go-application-go-gin/conf => D:\code\GoProject\go-gin\conf
-	github.com/rongqinzheng/go-application-go-gin/middleware => D:\code\GoProject\go-gin\middleware
-	github.com/rongqinzheng/go-application-go-gin/models => D:\code\GoProject\go-gin\models
-	github.com/rongqinzheng/go-application-go-gin/pkg/e => D:\code\GoProject\go-gin\pkg\e
-	github.com/rongqinzheng/go-application-go-gin/pkg/setting => D:\code\GoProject\go-gin\pkg\setting
-	github.com/rongqinzheng/go-application-go-gin/pkg/util => D:\code\GoProject\go-gin\pkg\util
-	github.com/rongqinzheng/go-application-go-gin/routers => D:\code\GoProject\go-gin\routers
-)
