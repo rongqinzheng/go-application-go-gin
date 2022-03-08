@@ -6,6 +6,8 @@ import (
 	"github.com/rongqinzheng/go-application-go-gin/pkg/setting"
 	"github.com/rongqinzheng/go-application-go-gin/routers/api"
 	"github.com/rongqinzheng/go-application-go-gin/routers/api/v1"
+	ginSwagger "github.com/swaggo/gin-swagger"
+	"github.com/swaggo/gin-swagger/swaggerFiles"
 )
 
 func InitRouter() *gin.Engine {
@@ -13,6 +15,7 @@ func InitRouter() *gin.Engine {
 	r.Use(gin.Logger())
 	r.Use(gin.Recovery())
 	gin.SetMode(setting.RunMode)
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	r.GET("test/", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "test",
